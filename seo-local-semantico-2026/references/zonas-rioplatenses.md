@@ -1,6 +1,6 @@
 # Zonas rioplatenses — índice para arquitectura y enlazado
 
-Datos geográficos para alimentar la plantilla de páginas por zona: jerarquía (madre → hija), barrios vecinos para el enlazado lateral, y referencias reales que un negocio local mencionaría. Verificar siempre con el operador del servicio los tiempos de llegada y las referencias que usa de verdad.
+Datos geográficos para alimentar la plantilla de páginas por zona: jerarquía (madre → hija), barrios vecinos para el enlazado lateral, y referencias reales que un negocio local mencionaría. Verificar siempre con el operador del servicio los tiempos de llegada y las referencias que usa de verdad. **Se usan sin confirmar**: `slug`, `zona madre`, `vecinos` y el tipo de vivienda genérico. **Requieren confirmación del operador o quedan como `{variable}`**: referencias concretas, rutas, tiempos de llegada. Las referencias de la tabla son disparadores para preguntarle al operador, no datos para publicar.
 
 Formato de cada fila: `slug | nombre | zona madre | vecinos (para enlaces laterales) | referencias reales`
 

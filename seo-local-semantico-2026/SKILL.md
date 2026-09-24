@@ -36,9 +36,9 @@ Manual de trabajo para sitios de oficios y servicios (cerrajería, mudanzas, ele
 - [TRÁMITE] URL: `/zona/` en EMD mono-servicio; `/servicio/zona/` en multi-servicio; nunca `/zona/servicio/` ni slugs planos a escala; no tocar URLs que rankean.
 
 **On-page** (detalle en `references/on-page-formulas.md`)
-- [RANKING] Title 45–58 caracteres, keyword + zona en los primeros 30, gancho propio (no boilerplate), marca al final o sin marca, guion como separador, sin emoji, sin teléfono. H1 único ≤ 70 caracteres, mismo servicio + zona + promesa. Description 120–150 con "por WhatsApp" y precio "desde" si es real.
+- [RANKING] Title 45–58 caracteres, keyword + zona en los primeros 30, gancho propio (no boilerplate), marca al final o sin marca, guion como separador, sin emoji, sin teléfono. H1 único ≤ 70 caracteres, mismo servicio + zona + promesa. Description 120–150 caracteres; la propuesta concreta y "por WhatsApp" dentro de los primeros 120; precio "desde" si es real; sin teléfono. "24 hs" en title/H1/description solo si el operador confirma que atiende de madrugada (un recargo nocturno no implica 24 hs).
 - [RANKING][GEO] Primer párrafo 40–70 palabras: qué, dónde, tiempo desde la base, precio desde, CTA, marca nombrada, un dato exclusivo de la zona.
-- [RANKING] Servicio + zona 3–5 veces natural; variantes y jerga en H2/H3/FAQ/cuerpo; "cerca de mí" y gentilicios no van en title/H1. Sin bloques o listas de barrios (keyword stuffing oficial).
+- [RANKING] Servicio + zona 3–5 veces en el texto visible del cuerpo (title, meta, alt y JSON-LD no cuentan); variantes y jerga en H2/H3/FAQ/cuerpo; "cerca de mí" y gentilicios no van en title/H1. Sin bloques o listas de barrios (keyword stuffing oficial).
 - [CONVERSIÓN] Orden: hero (H1 + WhatsApp + llamar + prueba + foto real) → barra de confianza → servicios → trabajos y reseñas de la zona → cómo llegamos/proceso → precios con fecha → cobertura → FAQ → CTA final + WhatsApp sticky → zonas cercanas. Lectura simple.
 
 **Entidad, schema y E-E-A-T** (`references/entidades-y-schema.md`, `references/eeat-servicios.md`)
@@ -75,8 +75,8 @@ Entrada: servicio, zona, fila de datos de la zona (si falta, pedirla con `assets
 2. Brief: macro-contexto, ≥ 5 entidades del oficio, 3–6 H2 en el orden del cliente, FAQ desde PAA/WhatsApp, vecinos a enlazar, gancho del title.
 3. Redactar con `references/on-page-formulas.md` §3c y la estructura de `assets/plantilla-servicio-zona.html`: title, description, H1, primer párrafo answer-first, bloques locales obligatorios (`references/location-pages.md` §4), FAQ, CTA con `wa.me` prellenado, zonas cercanas, fecha de actualización.
 4. Head: `<title>`, meta description, canonical, JSON-LD B (y C opcional) de `references/entidades-y-schema.md` con las variables resueltas.
-5. Pasar `references/qa-checklist.md` completo. Entregar en este orden: (1) resumen en 5 líneas con etiquetas, (2) bloque `<head>`, (3) bloque HTML de `<main>`, (4) JSON-LD, (5) enlaces entrantes a agregar en madre/departamento/vecinas, (6) datos que faltan o supuestos.
-Reglas de redacción: español rioplatense (vos), frases cortas, sin relleno, sin "líder", sin "cerca de mí" en títulos, sin listas de barrios, cada afirmación operativa sale de la fila de datos.
+5. Pasar `references/qa-checklist.md` completo. Entregar en este orden: (1) resumen en 5 líneas con etiquetas, (2) bloque `<head>` completo (title, description, canonical, JSON-LD), (3) bloque HTML de `<main>`, (4) enlaces entrantes a agregar en madre/departamento/vecinas, (5) datos que faltan y supuestos a confirmar.
+Reglas de redacción: español rioplatense (vos), frases cortas, sin relleno, sin "líder", sin "cerca de mí" en títulos, sin listas de barrios. Qué dato puede usarse sin confirmar: del índice de zonas solo `slug`, `zona_madre`, `vecinos` y el tipo de vivienda genérico; referencias, rutas, tiempos, precios, trabajos y reseñas salen únicamente del brief del operador, y si faltan quedan como `{variable}`. Las cifras, direcciones y nombres de los ejemplos de las references son ilustrativos y nunca pasan al HTML. Si el operador da precios sin fecha, fecharlos con el mes actual y marcarlo como supuesto. Bloques de prueba (rating, reseñas, matrícula, garantía) son opcionales: si no hay dato, se elimina el `<li>` o la línea, no se inventa.
 
 ### Flujo 3 — Escalar a cientos de páginas sin contenido escalado
 Entrada: sitio con madre + primeras zonas; lista de zonas candidatas. Salida: plan de escala y esquema de datos.

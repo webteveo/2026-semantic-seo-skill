@@ -202,7 +202,7 @@ Horario 24 h solo si es real. Sin `aggregateRating`. Para EMD mono-servicio, `ha
 }
 ```
 
-En EMD mono-servicio (`/pocitos/`), quitar el nivel `{servicio_slug}` de las URLs y el ListItem 2. Si el precio no es fijo, eliminar `offers` (no poner 0). `dateModified` real.
+**Variante EMD mono-servicio** (`cerrajero.uy/pocitos/`): las URLs quedan `{url}/{zona_slug}/`, el `@id` del servicio `{url}/{zona_slug}/#servicio`, y el breadcrumb tiene 3 ítems: Inicio (`{url}/`) › {Departamento} (`{url}/{departamento_slug}/`) › {Zona}. `provider` sigue apuntando a `{url}/#negocio` (el `Locksmith` de la home). Si el precio no es fijo, eliminar `offers` (no poner 0). `dateModified` real.
 
 ### C. FAQPage (opcional; solo si las preguntas difieren por página)
 
