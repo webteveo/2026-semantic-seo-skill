@@ -1,0 +1,23 @@
+{
+  "skill_name": "seo-local-semantico-2026",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Tengo cerrajero.uy (plantilla PHP, WhatsApp como CTA). Quiero la página para Pocitos. Datos del operador: base en Cordón (Constituyente y Canelones), llega a Pocitos en 15-25 min de día y 30 de noche, apertura desde $U 1.900, cambio de cerradura desde $U 2.800 + cerradura, nocturno +30%. Trabajos: apertura puerta blindada en Benito Blanco (marzo 2026, 25 min), cambio de cilindro europeo en edificio de la rambla (abril 2026), llave rota adentro en 26 de Marzo (mayo 2026). Reseña de Google: 'Vino en 20 minutos a Pocitos y abrió sin romper nada, precio claro' (Lucía, mayo 2026). Cubre también Pocitos Nuevo y Villa Biarritz. Dame title, meta, H1 y el HTML listo para pegar.",
+      "expected_output": "Head (title 45–58 c., description 120–150, canonical), HTML de <main> con hero + WhatsApp, párrafo answer-first con datos de la zona, tabla de trabajos, reseña con barrio, cómo llegamos, tabla de precios con fecha, cobertura, FAQ local, CTA, zonas vecinas reales (Punta Carretas, Buceo, Parque Batlle, Cordón), JSON-LD Service+Breadcrumb, enlaces entrantes a agregar, datos faltantes; todo etiquetado [RANKING]/[CONVERSIÓN]/[TRÁMITE]/[GEO].",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Voy a lanzar un sitio nuevo de aire acondicionado para Montevideo y Ciudad de la Costa (dominio aireacondicionado.uy). El instalador tiene base en Malvín, matrícula de gasista, y hace instalación de split, service y carga de gas. Quiero cubrir todos los barrios de Montevideo y todas las localidades de Canelones desde el día uno, como hice con cerrajero.uy. Armame la arquitectura.",
+      "expected_output": "Análisis de SERP a hacer, entidad central y Source Context, topical map (core/outer), lista de zonas con URL vs sección según demanda y datos, arquitectura de URLs (/zona/ en EMD), plan de enlazado y tandas, brief de datos a pedir, y una advertencia clara con el riesgo de crear 100+ páginas sin datos (doorway/scaled content) con tope operativo y umbral de indexación.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Auditame esta página: https://yesocaba.com/caballito (yesero en Caballito, CABA). Tiene title 'Yeso Caballito | Yesería Caballito | Yeseros en Caballito', un H1 'Yeso en Caballito', 300 palabras genéricas sobre qué es el yeso, fotos generadas con IA de 'nuestro equipo', un footer con los 48 barrios de CABA enlazados y schema LocalBusiness con aggregateRating 4.9. ¿Qué está mal y qué hago primero?",
+      "expected_output": "Tabla Hallazgo | Tipo | Impacto | Esfuerzo | Acción ordenada por impacto: title con keyword repetida (stuffing/boilerplate), contenido commodity sin datos locales (test del nombre), fotos IA como equipo (E-E-A-T), footer de 48 barrios (keyword stuffing oficial), aggregateRating self-serving (inelegible, riesgo de acción manual), falta de bloques locales; top 3 de esta semana; todo etiquetado y con riesgos concretos.",
+      "files": []
+    }
+  ]
+}
