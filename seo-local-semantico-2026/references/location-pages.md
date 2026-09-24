@@ -80,6 +80,8 @@ Proporción: hasta ~80 % de estructura y texto base compartido; el 20 % local de
 - Nivel 2 — departamento/ciudad grande: `/montevideo/`, `/canelones/`, `/maldonado/`, `/caba/`. Agrupa; contiene secciones con ancla para localidades sin URL; enlaza a las que sí la tienen.
 - Nivel 3 — barrio/localidad: `/pocitos/`, `/punta-ballena/`. Solo con datos. Enlaza a madre, departamento y 3–5 vecinos reales.
 
+En un EMD mono-servicio los tres niveles pueden convivir en la raíz (`/montevideo/`, `/pocitos/`): la jerarquía la dan los breadcrumbs, los enlaces y el sitemap segmentado, no la cantidad de barras en la URL (Google mide profundidad de clics, no de carpetas). En un sitio multi-servicio se anida: `/cerrajero/montevideo/pocitos/` o `/cerrajero/pocitos/` con breadcrumb Inicio › Cerrajero › Montevideo › Pocitos.
+
 **Anti-canibalización**: title/H1 de nivel 3 siempre con zona (+ subzonas); nunca compiten por "cerrajero" a secas ni por "cerrajero Montevideo": eso es de la madre. Si GSC muestra dos URLs alternando para la misma query, fusionar.
 
 **URLs**:
